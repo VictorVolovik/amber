@@ -1,0 +1,289 @@
+body {
+    font-size: 16px;
+    font-family: 'Libre Baskerville', 'Times New Roman', serif;
+}
+
+main {
+    background: url("../img/uniback_4.gif") repeat;
+    padding-bottom: 30px;
+}
+
+header {
+    padding: 20px 0;
+    background-color: #212121;
+}
+
+h1,
+h2 {
+    color: #FFFDE7;
+    text-align: center;
+}
+
+h3,
+h4 {
+    color: #212121;
+    text-align: center;
+}
+
+h1 {
+    line-height: 1.5em;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+    line-height: 1.5em;
+    white-space: nowrap;
+}
+
+h3 {
+    font-size: 1.4em;
+    white-space: nowrap;
+}
+
+h4 {
+    padding-top: 30px;
+    font-size: 1.4em;
+    line-height: 1.5em;
+}
+
+ul {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.main-char {
+    padding-top: 40px;
+}
+
+.main-char li,
+.other-char li {
+    display: inline-block;
+    text-align: center;
+}
+
+.main-char li {
+    width: 120px;
+    margin: 0 3%;
+}
+
+.main-char li:hover {
+    width: 130px;
+}
+
+.other-char li {
+    width: 100px;
+    margin: 5px 1% 0 1%;
+}
+
+.other-char li:hover {
+    width: 120px;
+}
+
+.amber-char ul li,
+.chaos-char ul li {
+    margin: 2px 0;
+}
+
+.amber-char ul li:first-child,
+.chaos-char ul li:first-child {
+    margin-top: 5px;
+}
+
+.wrap {
+    height: 770px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.char-info {
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.block {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+/*********************
+******  Buttons  *****
+*********************/
+
+li {
+    display: inline-block;
+    width: 90%;
+    height: 30px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.7em;
+    font-family: Helvetica, Arial, sans-serif;
+    white-space: nowrap;
+    background-color: #f4d6a3;
+    border: 1px solid #212121;
+    border-radius: 5px;
+    box-shadow: 1px 3px 2px 1px #9d9d9d;
+}
+
+li:hover,
+li:focus {
+    width: 95%;
+    font-size: 0.8em;
+}
+
+li a {
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.2em;
+    color: #212121;
+    pointer-events: none;
+    cursor: default;
+}
+
+li a:hover,
+li a:focus {
+    color: black;
+    text-decoration: none;
+}
+/********************
+******  Start  ******
+*********************/
+
+.start {
+    padding: 0;
+    margin-top: 100px;
+    display: none;
+}
+
+.start img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px 3px #9d9d9d;
+    ;
+}
+/********************
+******   Block  ******
+*********************/
+
+.block {
+    margin: 50px 0;
+    background-color: rgba( 75, 75, 75, 0.5);
+    border-radius: 10px;
+    border: 1px outset #4b4b4b;
+    box-shadow: 2px 2px 5px 1px #4b4b4b;
+}
+
+.block figure {
+    padding: 10px 40px 20px 40px;
+}
+
+.block img {
+    border-radius: 10px;
+    border: 1px outset #212121;
+    box-shadow: 2px 2px 5px 1px #212121;
+}
+
+.block p {
+    padding: 0 40px 20px 40px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.back {
+    display: none;
+}
+/********************
+*****   Footer  *****
+*********************/
+
+footer {
+    height: 100px;
+    background-color: #212121;
+    padding: 0;
+}
+
+.contacts p {
+    padding: 30px;
+    text-align: left;
+    color: #555555;
+}
+
+.copyright {
+    padding: 30px;
+    text-align: right;
+}
+
+.copyright a,
+.contacts a {
+    text-decoration: none;
+}
+/********************
+****    Media  ******
+*********************/
+
+@media screen and (max-width: 991px) {
+    body {
+        font-size: 24px;
+    }
+    .wrap {
+        height: 0;
+    }
+    li {
+        height: 50px;
+        margin-bottom: 5px;
+    }
+    li a {
+        pointer-events:all;
+        cursor: pointer;
+        line-height: 50px;
+        font-size: 1.5em;
+    }
+    .main-char li,
+    .other-char li,
+    .amber-char ul li,
+    .chaos-char ul li,
+    .main-char li:hover,
+    .other-char li:hover {
+        display: block;
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+    .char-info {
+        margin-top: 0;
+        display: none;
+    }
+    footer {
+        height: 220px;
+    }
+    .block {
+        margin: 20px auto;
+        font-size: 1.2em;
+    }
+    .back {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        color: #f4d6a3;
+        background-color: #212121;
+        border-radius: 5px;
+        box-shadow: none;
+    }
+    .back:hover {
+        color: #4b4b4b;
+        text-decoration: none;
+    }
+}
